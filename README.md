@@ -1,6 +1,6 @@
 # ESP32 RF Monopolo Analysis System
 
-Sistema de monitoramento e análise de propagação de sinais Wi-Fi em **2,4 GHz**, desenvolvido para avaliar o desempenho de uma **antena dipolo externa** em comparação com a **antena original de fábrica (PCB Trace Antenna)** do ESP32.
+Sistema de monitoramento e análise de propagação de sinais Wi-Fi em **2,4 GHz**, desenvolvido para avaliar o desempenho de uma **antena monopolo externa** em comparação com a **antena original de fábrica (PCB Trace Antenna)** do ESP32.
 
 ---
 
@@ -8,7 +8,7 @@ Sistema de monitoramento e análise de propagação de sinais Wi-Fi em **2,4 GHz
 
 Este projeto tem como objetivo desenvolver uma ferramenta de **site survey Wi-Fi** de baixo custo, capaz de monitorar em tempo real a intensidade do sinal (**RSSI**) das redes sem fio próximas.
 
-A aplicação permite realizar experimentos controlados para comparar quantitativamente o desempenho da antena original do ESP32 com uma antena dipolo externa, utilizando visualização gráfica e armazenamento dos dados coletados.
+A aplicação permite realizar experimentos controlados para comparar quantitativamente o desempenho da antena original do ESP32 com uma antena monopolo externa, utilizando visualização gráfica e armazenamento dos dados coletados.
 
 ---
 
@@ -49,7 +49,7 @@ Coleta de dados utilizando exclusivamente a antena original integrada ao ESP32 (
 
 ### 2. Modificação Física
 
-Substituição da antena original por uma **antena dipolo externa de aproximadamente 3,1 cm**, dimensionada para operação na faixa de **2,4 GHz**.
+Substituição da antena original por uma **antena monopolo externa de aproximadamente 3,1 cm**, dimensionada para operação na faixa de **2,4 GHz**.
 
 ### 3. Análise Comparativa
 
@@ -68,14 +68,15 @@ Os conjuntos de dados utilizados na análise encontram-se na pasta **`/test`**.
 
 ```text
 .
-├── app.py                 # Servidor Flask
-├── templates/             # Interface Web
-├── static/                # CSS e JavaScript
+├── src/                   # Firmware em C++ (Código embarcado no ESP32)
+├── app.py                 # Servidor Back-end em Python (Flask)
+├── templates/             # Interface Web Front-end (HTML/JS)
 ├── test/
-│   ├── baseline/          # Dados com antena original
-│   └── dipole/            # Dados com antena dipolo
-├── capturas.json          # Dados coletados
-└── README.md
+│   ├── baseline_original/ # Dados e evidências com a antena original (PCB)
+│   └── pos_modificacao/   # Dados e evidências com a antena monopolo de 1/4 de onda
+├── platformio.ini         # Arquivo de configuração de hardware do PlatformIO
+├── capturas.json          # Arquivo de persistência temporária das leituras em JSON
+└── README.md              # Documentação do projeto
 ```
 
 ---
@@ -126,7 +127,7 @@ http://127.0.0.1:5000
 
 Projeto desenvolvido para a disciplina **Ondas e Antenas** da **Universidade Federal do Ceará (UFC) – Campus Quixadá**.
 
-O objetivo é validar experimentalmente o impacto da substituição da antena original do ESP32 por uma antena dipolo externa, utilizando técnicas de medição, aquisição de dados e análise gráfica em tempo real.
+O objetivo é validar experimentalmente o impacto da substituição da antena original do ESP32 por uma antena monopolo externa, utilizando técnicas de medição, aquisição de dados e análise gráfica em tempo real.
 
 ---
 
