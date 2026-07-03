@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/fabio/PlatformIO/Projects/esp32-dipole-antenna/include",
-                "/home/fabio/PlatformIO/Projects/esp32-dipole-antenna/src",
+                "/home/fabio/PlatformIO/Projects/esp32-monopole-antenna/include",
+                "/home/fabio/PlatformIO/Projects/esp32-monopole-antenna/src",
                 "/home/fabio/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "/home/fabio/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "/home/fabio/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
@@ -244,8 +244,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/fabio/PlatformIO/Projects/esp32-dipole-antenna/include",
-                    "/home/fabio/PlatformIO/Projects/esp32-dipole-antenna/src",
+                    "/home/fabio/PlatformIO/Projects/esp32-monopole-antenna/include",
+                    "/home/fabio/PlatformIO/Projects/esp32-monopole-antenna/src",
                     "/home/fabio/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "/home/fabio/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "/home/fabio/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
