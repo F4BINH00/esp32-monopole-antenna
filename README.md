@@ -1,4 +1,4 @@
-# ESP32 RF Dipole Analysis System
+# ESP32 RF Monopolo Analysis System
 
 Sistema de monitoramento e análise de propagação de sinais Wi-Fi em **2,4 GHz**, desenvolvido para avaliar o desempenho de uma **antena dipolo externa** em comparação com a **antena original de fábrica (PCB Trace Antenna)** do ESP32.
 
