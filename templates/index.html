@@ -28,13 +28,13 @@
 
     <script>
       const ctx = document.getElementById("graficoRssi").getContext("2d");
-      const maxPontos = 20; // Quantidade de leituras que ficam no histórico da tela
+      const maxPontos = 20;
 
       const grafico = new Chart(ctx, {
         type: "line",
         data: { labels: [], datasets: [] },
         options: {
-          animation: { duration: 0 }, // Desativa animação para fluidez no tempo real
+          animation: { duration: 0 },
           scales: {
             y: {
               suggestedMax: -30,

@@ -31,7 +31,6 @@ def ler_serial():
                     lendo_json = True
                 elif lendo_json:
                     buffer += linha
-                    # Finaliza a gravação e tenta converter
                     if linha == "]":
                         try:
                             dados_wifi = json.loads(buffer)
